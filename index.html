@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransCamaçari - Home</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Garantia extra de alinhamento caso seu styles.css não carregue o flex */
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .brand-name {
+            display: block;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #111827;
+            line-height: 1.1;
+        }
+        .brand-sub {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo-area">
+                <div class="logo-icon-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-bus-front" viewBox="0 0 16 16">
+                        <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.837 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3"/>
+                        <path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1"/>
+                    </svg>
+                </div>
+
+
+
+
+                <div class="brand-text-wrapper">
+                    <span class="brand-name">TransCamaçari</span>
+                    <span class="brand-sub">Mobilidade Inteligente</span>
+                </div>
+            </div>
+           
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">Sobre o Projeto</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#equipe">Equipe SENAI</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+
+
+
+            <button class="btn-black">Acessar Rotas Privadas</button>
+        </div>
+    </header>
+
+
+
+
+<div class="hero-slider-container" style="overflow: hidden; width: 100%; position: relative;">
+   
+    <main id="hero-master" style="display: flex; width: 200%; transition: transform 1s ease-in-out; border: none; margin: 0; padding: 0;">
+       
+        <div class="hero-slide" style="width: 50%; background-color: #2563eb; padding: 60px 0;">
+            <div class="container hero-wrapper" style="display: flex; align-items: center; justify-content: space-between; gap: 40px;">
+                <div class="hero-content">
+                    <h1 style="color: white; font-size: 3rem; font-weight: 800; margin-bottom: 20px;">Revolucionando o Transporte Público de Camaçari</h1>
+                    <p style="color: white; font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px;">Nunca mais perca seu ônibus! Acompanhe em tempo real a localização dos ônibus públicos e privados de Camaçari direto do seu celular.</p>
+                    <div class="hero-actions" style="display: flex; gap: 15px;">
+                        <button class="btn-primary-white" style="background: white; color: #2563eb; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer;">Começar Agora - Grátis</button>
+                        <button class="btn-outline-white" style="background: transparent; color: white; border: 2px solid white; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer;">Saber Mais</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="hero-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); width: 400px; color: white;">
+                    <div class="card-header" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-bus-front" viewBox="0 0 16 16">
+                            <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.837 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3"/><path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1"/>
+                        </svg>
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="opacity: 0.8; font-size: 0.9rem;">Sistema em Tempo Real</span>
+                            <span style="font-size: 1.5rem; font-weight: 700;">100% Gratuito</span>
+                        </div>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;"><svg width="18" height="18" fill="#4ade80" viewBox="0 0 16 16"><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg> Rastreamento GPS em Tempo Real</li>
+                        <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;"><svg width="18" height="18" fill="#4ade80" viewBox="0 0 16 16"><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg> Notificações de Chegada</li>
+                        <li style="display: flex; align-items: center; gap: 10px;"><svg width="18" height="18" fill="#4ade80" viewBox="0 0 16 16"><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg> Acesso Mobile e Desktop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="hero-slide" style="width: 50%; background-color: #e67e22; padding: 60px 0;">
+            <div class="container hero-wrapper" style="display: flex; align-items: center; justify-content: space-between; gap: 40px;">
+                <div class="hero-content">
+                    <h1 style="color: white; font-size: 3rem; font-weight: 800; margin-bottom: 20px;">Ajudando você a organizar seus horários</h1>
+                    <p style="color: white; font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px;">Cadastre seus funcionários ou se cadastre no plano de empresa privada! acompanhe onde está seus transporte e não perca mais suas conduções.</p>
+                    <div class="hero-actions" style="display: flex; gap: 15px;">
+                        <button style="background: white; color: #e67e22; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer;">Cadastre sua empresa</button>
+                        <button style="background: transparent; color: white; border: 2px solid white; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer;">sou funcionário</button>
+                    </div>
+                </div>
+
+
+
+
+<div class="hero-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); width: 420px; color: white;">
+    <div class="card-header" style="display: flex; align-items: center; gap: 15px; margin-bottom: 30px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-bus-front" viewBox="0 0 16 16" style="flex-shrink: 0;">
+            <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.837 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3"/><path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1"/>
+        </svg>
+        <div style="display: flex; flex-direction: column;">
+            <span style="opacity: 0.9; font-size: 0.9rem;">Sistema em tempo real</span>
+            <span style="font-size: 1.6rem; font-weight: 700;">100% gratuito</span>
+        </div>
+    </div>
+    <ul style="list-style: none; padding: 0;">
+        <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+            <svg width="18" height="18" fill="#59c173" viewBox="0 0 16 16" style="flex-shrink: 0;"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+            Desconto de 30% no pacote anual
+        </li>
+        <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+            <svg width="18" height="18" fill="#59c173" viewBox="0 0 16 16" style="flex-shrink: 0;"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+            Crie o sistema de transporte da sua empresa
+        </li>
+        <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+            <svg width="18" height="18" fill="#59c173" viewBox="0 0 16 16" style="flex-shrink: 0;"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+            Não perca seus horários de trabalho, escola e etc com o premium!
+        </li>
+        <li style="display: flex; align-items: center; gap: 12px;">
+            <svg width="18" height="18" fill="#59c173" viewBox="0 0 16 16" style="flex-shrink: 0;"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+            Acesso desktop e mobile
+        </li>
+    </ul>
+</div>
+        </div>
+
+
+
+
+    </main>
+</div>
+
+
+
+
+<script>
+    const slider = document.getElementById('hero-master');
+    let onSecondSlide = false;
+
+
+
+
+    setInterval(() => {
+        if (!onSecondSlide) {
+            slider.style.transform = 'translateX(-50%)';
+        } else {
+            slider.style.transform = 'translateX(0)';
+        }
+        onSecondSlide = !onSecondSlide;
+    }, 10000); // 10 segundos
+</script>
+
+
+
+
+<style>
+    /* Estilos globais para os containers do slide */
+    .hero-slide {
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+    }
+</style>
+
+
+
+
+<section class="search-section" style="padding: 60px 0; background-color: #f9fafb;">
+    <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
+        <div class="search-card" style="background: #ffffff; padding: 40px; border-radius: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); position: relative;">
+           
+            <div class="search-header" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <div class="search-icon-placeholder" style="color: #2563eb;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </div>
+                <h2 style="margin: 0; font-size: 1.8rem; font-weight: 700; color: #111827;">Buscar Linhas de Ônibus</h2>
+            </div>
+           
+            <p class="search-description" style="color: #6b7280; margin-bottom: 20px;">Digite o nome do seu bairro para ver quais linhas atendem sua região</p>
+           
+            <div class="status-banner" style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 24px;">
+                <div class="status-left" style="display: flex; align-items: center; gap: 8px; color: #166534;">
+                    <div class="clock-icon-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                        </svg>
+                    </div>
+                    <strong style="font-size: 0.95rem;">Dados Atualizados em Tempo Real</strong>
+                </div>
+                <div class="status-right" style="color: #166534; font-size: 0.9rem;">
+                    <p style="margin: 0;">- Horários e rotas são atualizados automaticamente. Última atualização: Abril 2026</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="input-group" style="display: flex; gap: 10px; position: relative;">
+                <div style="flex: 1; position: relative;">
+                    <input type="text" id="inputBairro" placeholder="Digite o bairro: Centro, Gleba A, Polo..."
+                        style="width: 100%; padding: 12px 16px; border: 1px solid #e5e7eb; border-radius: 8px; background-color: #f9fafb; outline: none; box-sizing: border-box;">
+                   
+                    <div id="autocomplete-list" style="position: absolute; top: 105%; left: 0; right: 0; background: white; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 10px 15px rgba(0,0,0,0.1); z-index: 1000; max-height: 250px; overflow-y: auto; display: none;">
+                    </div>
+                </div>
+                <button class="btn-search" style="background-color: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; height: 100%;">Buscar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    const bairros = [
+        "Abrantes", "Alto da Cruz", "Alto do Cruzeiro", "Alto do Triângulo", "Areias",
+        "Arembepe", "Barra do Jacuípe", "Barra do Pojuca", "Camaçari de Dentro", "Catu de Abrantes",
+        "Centro", "Coqueiros de Arembepe", "Ficam", "Gleba A", "Gleba B", "Gleba C", "Gleba E",
+        "Gleba H", "Gravatá", "Itacimirim", "Jauá", "Lama Preta", "Machadinho", "Monte Gordo",
+        "Nova Vitória", "Parafuso", "Parque Nascente do Rio Capivara", "Piaçaveira",
+        "Ponto Certo", "Phoc I", "Phoc II", "Phoc III", "Polo Industrial", "Santa Maria", "Verdes Horizontes"
+    ];
+
+
+
+
+    const inputBairro = document.getElementById('inputBairro');
+    const autocompleteList = document.getElementById('autocomplete-list');
+
+
+
+
+    inputBairro.addEventListener('input', function() {
+        const val = this.value;
+        autocompleteList.innerHTML = '';
+       
+        if (!val) {
+            autocompleteList.style.display = 'none';
+            return;
+        }
+
+
+
+
+        const filtrados = bairros.filter(b => b.toLowerCase().startsWith(val.toLowerCase()));
+
+
+
+
+        if (filtrados.length > 0) {
+            autocompleteList.style.display = 'block';
+            filtrados.forEach(bairro => {
+                const item = document.createElement('div');
+                item.style.padding = '12px 16px';
+                item.style.cursor = 'pointer';
+                item.style.display = 'flex';
+                item.style.alignItems = 'center';
+                item.style.gap = '10px';
+                item.style.borderBottom = '1px solid #f3f4f6';
+
+
+
+
+                // Inserindo o emoji/ícone de localização solicitado
+                item.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3b82f6" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                    <span style="color: #374151;">${bairro}</span>
+                `;
+
+
+
+
+                item.addEventListener('click', function() {
+                    inputBairro.value = bairro;
+                    autocompleteList.style.display = 'none';
+                });
+
+
+
+
+                item.onmouseover = () => item.style.background = '#f3f4f6';
+                item.onmouseout = () => item.style.background = '#fff';
+
+
+
+
+                autocompleteList.appendChild(item);
+            });
+        } else {
+            autocompleteList.style.display = 'none';
+        }
+    });
+
+
+
+
+    // Fecha a lista se clicar fora
+    document.addEventListener('click', function (e) {
+        if (e.target !== inputBairro) {
+            autocompleteList.style.display = 'none';
+        }
+    });
+</script>
+
+
+
+
+    <section id="sobre" class="about-section">
+        <div class="container">
+           
+            <div class="section-header">
+                <h2>Sobre o Projeto</h2>
+                <p>Uma solução desenvolvida por estudantes do SENAI Camaçari para melhorar a mobilidade urbana e a qualidade de vida dos cidadãos</p>
+            </div>
+
+
+
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>O <strong>TransCamaçari</strong> nasceu da necessidade real de milhares de cidadãos que enfrentam diariamente o desafio de não saber quando o ônibus vai chegar. Perdemos compromissos, chegamos atrasados ao trabalho e ficamos expostos ao sol e à chuva esperando sem previsão.</p>
+                   
+                    <p>Desenvolvido como <strong>Trabalho de Conclusão de Curso (TCC)</strong> por estudantes do <strong>SENAI Camaçari</strong>, este projeto visa revolucionar o transporte público da nossa cidade através da tecnologia.</p>
+                   
+                    <p>Nosso sistema utiliza <strong>rastreamento GPS via Bluetooth</strong> para fornecer informações em tempo real sobre a localização dos ônibus, permitindo que os usuários planejem melhor seu tempo e evitem esperas desnecessárias.</p>
+                </div>
+
+
+
+
+<style>
+    .impact-card {
+        background-color: #f0f7ff; /* Fundo levemente azulado como na imagem */
+        padding: 24px;
+        border-radius: 16px;
+        max-width: 450px;
+    }
+    .impact-card h4 {
+        color: #1e3a8a;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+    .impact-item {
+        display: flex;
+        align-items: center; /* Alinha o círculo com o texto pelo meio */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .impact-icon-circle {
+        width: 40px;
+        height: 40px;
+        background-color: #3b82f6; /* Azul do SENAI */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: white;
+    }
+    .impact-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .impact-info strong {
+        color: #111827;
+        font-size: 1rem;
+    }
+    .impact-info span {
+        color: #4b5563;
+        font-size: 0.85rem;
+    }
+</style>
+
+
+
+
+<style>
+    /* Estilos ajustados para distribuir melhor os tópicos */
+    .impact-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Garante que o conteúdo respeite a altura da caixa */
+        padding: 30px; /* Aumentei levemente o preenchimento interno geral */
+    }
+
+
+
+
+    .impact-item {
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Aumentei a distância entre o ícone e o texto */
+        margin-bottom: 35px; /* Aumentei o espaço entre cada tópico para ocupar a caixa */
+    }
+
+
+
+
+    /* Remove a margem do último item para não quebrar o padding da caixa */
+    .impact-item:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+
+    .impact-icon-circle {
+        width: 45px; /* Ícones levemente maiores para preencher melhor o visual */
+        height: 45px;
+        background-color: #3b82f6;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: white;
+    }
+
+
+
+
+    .impact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px; /* Espaço entre o título e a descrição */
+    }
+
+
+
+
+    .impact-info strong {
+        font-size: 1.1rem;
+        color: #111827;
+    }
+
+
+
+
+    .impact-info span {
+        font-size: 0.9rem;
+        color: #4b5563;
+        line-height: 1.4;
+    }
+</style>
+
+
+
+
+<div class="impact-card">
+    <h4 style="margin-bottom: 30px; color: #1e3a8a; font-size: 1.3rem;">Impacto Esperado em Camaçari</h4>
+   
+    <div class="impact-item">
+        <div class="impact-icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+            </svg>
+        </div>
+        <div class="impact-info">
+            <strong>Economia de Tempo</strong>
+            <span>Redução de até 30 minutos de espera por dia</span>
+        </div>
+    </div>
+
+
+
+
+    <div class="impact-item">
+        <div class="impact-icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+        </div>
+        <div class="impact-info">
+            <strong>Alcance Social</strong>
+            <span>Beneficiando mais de 100 mil usuários de transporte público</span>
+        </div>
+    </div>
+
+
+
+
+    <div class="impact-item">
+        <div class="impact-icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </div>
+        <div class="impact-info">
+            <strong>Eficiência Urbana</strong>
+            <span>Melhor planejamento de rotas e redução de congestionamentos</span>
+        </div>
+    </div>
+
+
+
+
+    <div class="impact-item">
+        <div class="impact-icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+        </div>
+        <div class="impact-info">
+            <strong>Qualidade de Vida</strong>
+            <span>Menos estresse e mais previsibilidade no dia a dia</span>
+        </div>
+    </div>
+</div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+<section id="funcionalidades" class="features-section" style="padding: 80px 0; background-color: #f9fafb;"> <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+       
+        <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 2.5rem; color: #111827; margin-bottom: 15px; font-weight: 700;">Funcionalidades</h2>
+            <p style="color: #4b5563; font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Tudo que você precisa para nunca mais perder o ônibus</p>
+        </div>
+
+
+
+
+        <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+           
+            <div class="feature-card" style="padding: 40px; background-color: #ffffff; border: 1px solid #f3f4f6; border-radius: 16px; transition: transform 0.3s ease; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="feature-icon-box" style="width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; background-color: #eff6ff; color: #3b82f6;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 600;">Rastreamento em Tempo Real</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Veja exatamente onde o ônibus está neste momento através de rastreamento GPS via Bluetooth. Atualizações a cada 5 segundos.</p>
+            </div>
+
+
+
+
+            <div class="feature-card" style="padding: 40px; background-color: #ffffff; border: 1px solid #f3f4f6; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="feature-icon-box" style="width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; background-color: #f0fdf4; color: #22c55e;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 600;">Previsão de Chegada</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Saiba exatamente quanto tempo falta para o ônibus chegar ao seu ponto. Planeje melhor seu tempo.</p>
+            </div>
+
+
+
+
+            <div class="feature-card" style="padding: 40px; background-color: #ffffff; border: 1px solid #f3f4f6; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="feature-icon-box" style="width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; background-color: #faf5ff; color: #a855f7;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shield" viewBox="0 0 16 16">
+                        <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 600;">100% Seguro e Gratuito</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Sistema totalmente gratuito para transporte público. Para rotas privadas, validação por CPF evita fraudes.</p>
+            </div>
+
+
+
+
+            <div class="feature-card" style="padding: 40px; background-color: #ffffff; border: 1px solid #f3f4f6; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="feature-icon-box" style="width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; background-color: #f0f9ff; color: #0ea5e9;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 600;">Mobile e Desktop</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Acesse de qualquer dispositivo: celular, tablet ou computador. Interface responsiva e intuitiva.</p>
+            </div>
+
+
+
+
+            <div class="feature-card" style="padding: 40px; background-color: #ffffff; border: 1px solid #f3f4f6; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="feature-icon-box" style="width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; background-color: #fef2f2; color: #ef4444;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bus-front" viewBox="0 0 16 16">
+                        <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3"/>
+                        <path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 600;">Todas as Linhas</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Acesso a informações de todas as linhas de ônibus de Camaçari. Rotas, horários e pontos de parada.</p>
+            </div>
+
+
+
+
+            <div class="feature-card" style="padding: 40px; background-color: #ffffff; border: 1px solid #f3f4f6; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="feature-icon-box" style="width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; background-color: #fefce8; color: #eab308;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 600;">Para Empresas</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Empresas podem gerenciar transporte privado de funcionários com validação de CPF e controle de acesso.</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+   <section id="equipe" class="team-section" style="padding: 80px 0; background-color: #ffffff;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+       
+        <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 2.5rem; color: #111827; margin-bottom: 15px; font-weight: 700;">Equipe SENAI Camaçari</h2>
+            <p style="color: #4b5563; font-size: 1.125rem;">Estudantes dedicados em transformar Camaçari através da tecnologia</p>
+        </div>
+
+
+
+
+        <div class="main-team-card" style="background-color: #2563eb; border-radius: 24px; padding: 48px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; color: #ffffff; margin-bottom: 60px; box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.2);">
+           
+            <div class="team-info-side">
+                <div class="team-badge" style="display: flex; align-items: center; gap: 15px; margin-bottom: 24px;">
+                    <div class="badge-icon" style="background: rgba(255,255,255,0.2); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong style="display: block; font-size: 1.25rem;">SENAI Camaçari</strong>
+                        <span style="opacity: 0.9; font-size: 0.9rem;">Excelência em Educação Profissional</span>
+                    </div>
+                </div>
+                <p style="margin-bottom: 20px; line-height: 1.6; font-size: 1.05rem;">Este projeto é o resultado de meses de pesquisa, desenvolvimento e dedicação da nossa equipe de estudantes do curso técnico em Desenvolvimento de Sistemas do SENAI Camaçari.</p>
+                <p style="line-height: 1.6; font-size: 1.05rem;">Orientados por professores especializados, aplicamos conhecimentos em programação, banco de dados, design de interfaces e gestão de projetos para criar uma solução real para um problema real da nossa cidade.</p>
+            </div>
+
+
+
+
+            <div class="tech-side" style="background: rgba(255,255,255,0.1); padding: 32px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);">
+                <h4 style="margin-bottom: 24px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Tecnologias Utilizadas</h4>
+                <div class="tech-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="tech-item" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px;">
+                        <strong style="display: block; font-size: 0.85rem; opacity: 0.8;">Frontend</strong>
+                        <span style="font-weight: 600;">React + TypeScript</span>
+                    </div>
+                    <div class="tech-item" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px;">
+                        <strong style="display: block; font-size: 0.85rem; opacity: 0.8;">Estilização</strong>
+                        <span style="font-weight: 600;">Tailwind CSS</span>
+                    </div>
+                    <div class="tech-item" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px;">
+                        <strong style="display: block; font-size: 0.85rem; opacity: 0.8;">Backend</strong>
+                        <span style="font-weight: 600;">Supabase</span>
+                    </div>
+                    <div class="tech-item" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px;">
+                        <strong style="display: block; font-size: 0.85rem; opacity: 0.8;">Rastreamento</strong>
+                        <span style="font-weight: 600;">GPS/Bluetooth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="values-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+           
+            <div class="value-card" style="padding: 40px; background: #ffffff; border: 1px solid #f3f4f6; border-radius: 20px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="value-icon-circle" style="width: 56px; height: 56px; border-radius: 50%; background-color: #eff6ff; color: #3b82f6; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                        <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 700;">Nossa Visão</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Tornar Camaçari referência em mobilidade urbana inteligente através da tecnologia acessível a todos.</p>
+            </div>
+
+
+
+
+            <div class="value-card" style="padding: 40px; background: #ffffff; border: 1px solid #f3f4f6; border-radius: 20px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="value-icon-circle" style="width: 56px; height: 56px; border-radius: 50%; background-color: #f0fdf4; color: #22c55e; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 700;">Nossos Valores</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Inovação, acessibilidade, transparência e compromisso com a melhoria da qualidade de vida dos cidadãos.</p>
+            </div>
+
+
+
+
+            <div class="value-card" style="padding: 40px; background: #ffffff; border: 1px solid #f3f4f6; border-radius: 20px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                <div class="value-icon-circle" style="width: 56px; height: 56px; border-radius: 50%; background-color: #faf5ff; color: #a855f7; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                        <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.25rem; color: #1f2937; margin-bottom: 16px; font-weight: 700;">Compromisso</h3>
+                <p style="color: #6b7280; line-height: 1.6;">Desenvolvimento contínuo e suporte dedicado para garantir que o sistema atenda às necessidades reais da população.</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para Transformar Seu Deslocamento?</h2>
+            <p>Junte-se a milhares de usuários e experimente o futuro do transporte público em Camaçari</p>
+           
+            <div class="cta-button-container">
+                <button class="btn-cta-white">Começar Agora - É Grátis</button>
+            </div>
+           
+            <p class="cta-note">Sem cadastro de cartão de crédito. Acesso imediato ao transporte público.</p>
+        </div>
+    </section>
+
+
+
+
+    <footer id="contato" class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo" style="display: flex; align-items: center; gap: 10px;">
+    <div class="logo-box" style="background-color: #007bff; padding: 8px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-bus-front" viewBox="0 0 16 16">
+            <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.837 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3"/>
+            <path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1"/>
+        </svg>
+    </div>
+    <span class="brand-name" style="color: white; font-size: 1.5rem; font-weight: 800;">TransCamaçari</span>
+</div>
+                <p class="brand-description">
+                    Sistema inteligente de rastreamento de transporte público e privado desenvolvido por estudantes do SENAI Camaçari. Nosso objetivo é revolucionar a mobilidade urbana e facilitar o deslocamento dos cidadãos de Camaçari.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <h4>Links Rápidos</h4>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Sobre o Projeto</a>
+                    <a href="#">Funcionalidades</a>
+                    <a href="#">Equipe SENAI</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
+
+
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> SENAI Camaçari - BA, Brasil</p>
+                    <p><i class="fas fa-envelope"></i> contato@transcamacari.com</p>
+                    <p><i class="fas fa-phone"></i> (75) 3621-0000</p>
+                </address>
+            </div>
+        </div>
+
+
+        <div class="footer-legal">
+            <p>© 2026 TransCamaçari - TCC SENAI. Todos os direitos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+
+
+        <div class="footer-credits">
+            <p>Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) pelos estudantes do SENAI Camaçari - Turma 2026</p>
+            <p class="tech-stack">Tecnologias: React • TypeScript • Tailwind CSS • Supabase • GPS/Bluetooth</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
